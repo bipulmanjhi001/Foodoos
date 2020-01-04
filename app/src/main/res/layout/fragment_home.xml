@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/product_detail_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/ic_top_background"
+            android:layout_height="120sp">
+
+            <include layout="@layout/top_layout"/>
+
+        </LinearLayout>
+        <include layout="@layout/category_layout" />
+        <include layout="@layout/banner_layout"/>
+
+    </LinearLayout>
+
+        <foodoo.com.model.FooterBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bottom_background"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:id="@+id/footerbar_product_details"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+            </LinearLayout>
+        </foodoo.com.model.FooterBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

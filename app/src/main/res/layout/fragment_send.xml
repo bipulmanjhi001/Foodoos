@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/ic_group_3"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:text="Hi! Welcome to Foodoo - Khaya Kya
+Foodoo for Foodies !!!
+Food is a very important element in everyone’s life. The art of gastronomy has evolved from being a source of quenching your hunger, to an experience of its own kind. Foodoo is for all you foodies out there who is looking for different, aspirationaland Elite dine out experiences in India."
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="10sp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="50sp"
+                android:background="@drawable/fb_img"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:layout_height="50sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/twit"
+                android:layout_width="50sp"
+                android:background="@drawable/twit_img"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:layout_height="50sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/whats"
+                android:layout_width="50sp"
+                android:background="@drawable/what_img"
+                android:layout_marginLeft="10sp"
+                android:layout_gravity="center"
+                android:layout_height="50sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

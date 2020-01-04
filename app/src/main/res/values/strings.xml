@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Foodoo</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">example@gmail.com</string>
+    <string name="prompt_password">******</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="new_v">New version available</string>
+    <string name="update_text">Please, "\n"
+        update app to new version
+        to continue reposting.</string>
+    <string name="cancel">NO,THANKS</string>
+    <string name="select_product">Select Product</string>
+    <string name="update">Update</string>
+
+    <string name="logintext1">LOGIN TO YOUR FIX MY RIDE PROFILE</string>
+    <string name="logintext2">THE POINT OF USING LOREM IPSUM</string>
+    <string name="logintext3">WELCOME YOUR</string>
+    <string name="logintext4">CUSTOMER LOGIN</string>
+    <string name="username">USER NAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="rememberme">REMEMBER ME</string>
+    <string name="custreg">CUSTOMER REGISTERATION</string>
+    <string name="forgotpass">FORGOT PASSWORD</string>
+
+    <string name="title_activity_register"></string>
+    <string name="welcomereg">WELCOME YOUR</string>
+    <string name="REGISTERATION">CUSTOMER REGISTRATION</string>
+    <string name="fname">FIRST NAME</string>
+    <string name="lname">LAST NAME</string>
+    <string name="address">ADDRESS</string>
+    <string name="phone">PHONE NO</string>
+    <string name="email">E-MAIL ADDRESS</string>
+    <string name="confirmpass">CONFIRM PASSWORD</string>
+    <string name="agreement">I ACCEPT YOUR TERMS &amp; CONDITIONS</string>
+
+    <string name="title_activity_forgot"></string>
+    <string name="changeforgot">CHANGE FORGOT</string>
+    <string name="FORGOT">YOUR PASSWORD</string>
+    <string name="userid">USER ID</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Foodoo</string>
+    <string name="nav_header_subtitle">foodoo@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Best Deals</string>
+    <string name="menu_slideshow">Membership Plans</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Membership Plans</string>
+    <string name="menu_send">About Us</string>
+    <string name="error_invalid_email">This Phone Number is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="we_sent_you_a_6_digit_code">We sent you a 6-digit code.</string>
+    <string name="_continue">Verify</string>
+
+</resources>
