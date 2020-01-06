@@ -10,5 +10,6 @@ public class URLs {
     public static final String URL_productcategory = ROOT_URL + "getcategory";
     public static final String URL_partnerlist = ROOT_URL + "partnerlist";
     public static final String URL_getheader = ROOT_URL + "getheader";
+    public static final String URL_offers = ROOT_URL + "offers";
 
 }

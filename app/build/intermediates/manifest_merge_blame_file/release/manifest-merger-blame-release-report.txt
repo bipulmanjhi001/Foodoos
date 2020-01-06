@@ -5,7 +5,7 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="17"
+8        android:minSdkVersion="19"
 8-->D:\Foodoo\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
 9-->D:\Foodoo\app\src\main\AndroidManifest.xml
@@ -23,86 +23,89 @@
 14-->D:\Foodoo\app\src\main\AndroidManifest.xml:9:5-81
 14-->D:\Foodoo\app\src\main\AndroidManifest.xml:9:22-78
 15    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-15-->D:\Foodoo\app\src\main\AndroidManifest.xml:11:5-13:47
-15-->D:\Foodoo\app\src\main\AndroidManifest.xml:12:9-57
+15-->D:\Foodoo\app\src\main\AndroidManifest.xml:10:5-12:47
+15-->D:\Foodoo\app\src\main\AndroidManifest.xml:11:9-57
 16
 17    <application
-17-->D:\Foodoo\app\src\main\AndroidManifest.xml:15:5-43:19
+17-->D:\Foodoo\app\src\main\AndroidManifest.xml:14:5-43:19
 18        android:name="foodoo.com.model.FoodooApplication"
-18-->D:\Foodoo\app\src\main\AndroidManifest.xml:16:9-48
+18-->D:\Foodoo\app\src\main\AndroidManifest.xml:15:9-48
 19        android:allowBackup="true"
-19-->D:\Foodoo\app\src\main\AndroidManifest.xml:17:9-35
+19-->D:\Foodoo\app\src\main\AndroidManifest.xml:16:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 20-->[androidx.core:core:1.1.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
 21        android:hardwareAccelerated="true"
-21-->D:\Foodoo\app\src\main\AndroidManifest.xml:18:9-43
+21-->D:\Foodoo\app\src\main\AndroidManifest.xml:17:9-43
 22        android:icon="@drawable/ic_launcher"
-22-->D:\Foodoo\app\src\main\AndroidManifest.xml:19:9-45
+22-->D:\Foodoo\app\src\main\AndroidManifest.xml:18:9-45
 23        android:label="@string/app_name"
-23-->D:\Foodoo\app\src\main\AndroidManifest.xml:20:9-41
+23-->D:\Foodoo\app\src\main\AndroidManifest.xml:19:9-41
 24        android:roundIcon="@drawable/ic_launcher_round"
-24-->D:\Foodoo\app\src\main\AndroidManifest.xml:21:9-56
+24-->D:\Foodoo\app\src\main\AndroidManifest.xml:20:9-56
 25        android:supportsRtl="true"
-25-->D:\Foodoo\app\src\main\AndroidManifest.xml:22:9-35
+25-->D:\Foodoo\app\src\main\AndroidManifest.xml:21:9-35
 26        android:theme="@style/AppTheme"
-26-->D:\Foodoo\app\src\main\AndroidManifest.xml:23:9-40
+26-->D:\Foodoo\app\src\main\AndroidManifest.xml:22:9-40
 27        android:usesCleartextTraffic="true" >
-27-->D:\Foodoo\app\src\main\AndroidManifest.xml:24:9-44
-28        <activity
-28-->D:\Foodoo\app\src\main\AndroidManifest.xml:25:9-28:68
-29            android:name="foodoo.com.Dashboard"
-29-->D:\Foodoo\app\src\main\AndroidManifest.xml:26:13-38
-30            android:label="@string/title_activity_dashboard"
-30-->D:\Foodoo\app\src\main\AndroidManifest.xml:27:13-61
-31            android:theme="@style/AppTheme.NoActionBar" />
-31-->D:\Foodoo\app\src\main\AndroidManifest.xml:28:13-56
-32        <activity android:name="foodoo.com.Register" />
-32-->D:\Foodoo\app\src\main\AndroidManifest.xml:29:9-46
-32-->D:\Foodoo\app\src\main\AndroidManifest.xml:29:19-43
-33        <activity
-33-->D:\Foodoo\app\src\main\AndroidManifest.xml:30:9-33:52
-34            android:name="foodoo.com.ui.login.Login"
-34-->D:\Foodoo\app\src\main\AndroidManifest.xml:31:13-43
-35            android:label="@string/title_activity_login"
-35-->D:\Foodoo\app\src\main\AndroidManifest.xml:32:13-57
-36            android:screenOrientation="portrait" />
-36-->D:\Foodoo\app\src\main\AndroidManifest.xml:33:13-49
-37        <activity
-37-->D:\Foodoo\app\src\main\AndroidManifest.xml:34:9-42:20
-38            android:name="foodoo.com.Splashscreen"
-38-->D:\Foodoo\app\src\main\AndroidManifest.xml:35:13-41
-39            android:screenOrientation="portrait" >
-39-->D:\Foodoo\app\src\main\AndroidManifest.xml:36:13-49
-40            <intent-filter>
-40-->D:\Foodoo\app\src\main\AndroidManifest.xml:37:13-41:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->D:\Foodoo\app\src\main\AndroidManifest.xml:38:17-69
-41-->D:\Foodoo\app\src\main\AndroidManifest.xml:38:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->D:\Foodoo\app\src\main\AndroidManifest.xml:40:17-77
-43-->D:\Foodoo\app\src\main\AndroidManifest.xml:40:27-74
-44            </intent-filter>
-45        </activity>
-46
-47        <provider
-47-->[com.squareup.picasso:picasso:2.71828] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\b9565554f6a475acca0b10e45f7201a0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-48            android:name="com.squareup.picasso.PicassoProvider"
-48-->[com.squareup.picasso:picasso:2.71828] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\b9565554f6a475acca0b10e45f7201a0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-49            android:authorities="foodoo.com.com.squareup.picasso"
-49-->[com.squareup.picasso:picasso:2.71828] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\b9565554f6a475acca0b10e45f7201a0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-50            android:exported="false" />
-50-->[com.squareup.picasso:picasso:2.71828] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\b9565554f6a475acca0b10e45f7201a0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-51        <provider
-51-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-52            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-52-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-53            android:authorities="foodoo.com.lifecycle-process"
-53-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-54            android:exported="false"
-54-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-55            android:multiprocess="true" />
-55-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-56    </application>
-57
-58</manifest>
+27-->D:\Foodoo\app\src\main\AndroidManifest.xml:23:9-44
+28        <activity android:name="foodoo.com.PatnerList" />
+28-->D:\Foodoo\app\src\main\AndroidManifest.xml:24:9-57
+28-->D:\Foodoo\app\src\main\AndroidManifest.xml:24:19-45
+29        <activity
+29-->D:\Foodoo\app\src\main\AndroidManifest.xml:25:9-28:59
+30            android:name="foodoo.com.Dashboard"
+30-->D:\Foodoo\app\src\main\AndroidManifest.xml:26:13-38
+31            android:label="@string/title_activity_dashboard"
+31-->D:\Foodoo\app\src\main\AndroidManifest.xml:27:13-61
+32            android:theme="@style/AppTheme.NoActionBar" />
+32-->D:\Foodoo\app\src\main\AndroidManifest.xml:28:13-56
+33        <activity android:name="foodoo.com.Register" />
+33-->D:\Foodoo\app\src\main\AndroidManifest.xml:29:9-46
+33-->D:\Foodoo\app\src\main\AndroidManifest.xml:29:19-43
+34        <activity
+34-->D:\Foodoo\app\src\main\AndroidManifest.xml:30:9-33:52
+35            android:name="foodoo.com.ui.login.Login"
+35-->D:\Foodoo\app\src\main\AndroidManifest.xml:31:13-43
+36            android:label="@string/title_activity_login"
+36-->D:\Foodoo\app\src\main\AndroidManifest.xml:32:13-57
+37            android:screenOrientation="portrait" />
+37-->D:\Foodoo\app\src\main\AndroidManifest.xml:33:13-49
+38        <activity
+38-->D:\Foodoo\app\src\main\AndroidManifest.xml:34:9-42:20
+39            android:name="foodoo.com.Splashscreen"
+39-->D:\Foodoo\app\src\main\AndroidManifest.xml:35:13-41
+40            android:screenOrientation="portrait" >
+40-->D:\Foodoo\app\src\main\AndroidManifest.xml:36:13-49
+41            <intent-filter>
+41-->D:\Foodoo\app\src\main\AndroidManifest.xml:37:13-41:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->D:\Foodoo\app\src\main\AndroidManifest.xml:38:17-69
+42-->D:\Foodoo\app\src\main\AndroidManifest.xml:38:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->D:\Foodoo\app\src\main\AndroidManifest.xml:40:17-77
+44-->D:\Foodoo\app\src\main\AndroidManifest.xml:40:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <provider
+48-->[com.squareup.picasso:picasso:2.71828] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\b9565554f6a475acca0b10e45f7201a0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+49            android:name="com.squareup.picasso.PicassoProvider"
+49-->[com.squareup.picasso:picasso:2.71828] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\b9565554f6a475acca0b10e45f7201a0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+50            android:authorities="foodoo.com.com.squareup.picasso"
+50-->[com.squareup.picasso:picasso:2.71828] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\b9565554f6a475acca0b10e45f7201a0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+51            android:exported="false" />
+51-->[com.squareup.picasso:picasso:2.71828] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\b9565554f6a475acca0b10e45f7201a0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+52        <provider
+52-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+53            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+54            android:authorities="foodoo.com.lifecycle-process"
+54-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+55            android:exported="false"
+55-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+56            android:multiprocess="true" />
+56-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\91790\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+57    </application>
+58
+59</manifest>

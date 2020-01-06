@@ -13,6 +13,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -32,6 +34,8 @@ import foodoo.com.adapter.Category_ProductAdpater;
 import foodoo.com.adapter.Category_ProductAdpater2;
 import foodoo.com.adapter.Category_ProductModel;
 import foodoo.com.adapter.Category_ProductModel2;
+import foodoo.com.adapter.Top_offer_adapter;
+import foodoo.com.adapter.Top_offers;
 import foodoo.com.api.URLs;
 import foodoo.com.model.ExpandableHeightGridView;
 import foodoo.com.model.SliderUtils;
@@ -55,6 +59,9 @@ public class HomeFragment extends Fragment {
     ArrayList<Category_ProductModel2> category_productModels2;
     ExpandableHeightGridView expandableHeightGridView,expandableHeightGridView2;
     ProgressBar progressBar_pro,progressBar_pro2;
+    Top_offer_adapter adapter;
+    ArrayList<Top_offers> top_offers;
+    RecyclerView recyclerView;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
@@ -64,19 +71,27 @@ public class HomeFragment extends Fragment {
 
         category_productModels = new ArrayList<Category_ProductModel>();
         category_productModels2=new ArrayList<Category_ProductModel2>();
+        top_offers=new ArrayList<Top_offers>();
 
         expandableHeightGridView=(ExpandableHeightGridView)root.findViewById(R.id.grid_imagelist_pro);
         expandableHeightGridView2=(ExpandableHeightGridView)root.findViewById(R.id.top_imagelist_pro);
+        recyclerView=(RecyclerView)root.findViewById(R.id.top_offers_re);
+        recyclerView.setHasFixedSize(true);
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, true));
         expandableHeightGridView.setExpanded(true);
         expandableHeightGridView2.setExpanded(true);
+
         expandableHeightGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 Category_ProductModel menuList= (Category_ProductModel) parent.getItemAtPosition(position);
                 String menuList_id=menuList.getId();
                 Intent intent= new Intent(getActivity(), PatnerList.class);
                 intent.putExtra("menuList_id",menuList_id);
                 startActivity(intent);
+
             }
         });
 
@@ -158,6 +173,7 @@ public class HomeFragment extends Fragment {
             }
         };
         VolleySingleton.getInstance(getActivity()).addToRequestQueue(stringRequest);
+        Top_offer();
     }
 
     private void CallProductList(){
@@ -250,7 +266,7 @@ public class HomeFragment extends Fragment {
                     public void onErrorResponse(VolleyError error) {
                     }
                 })
-        {
+            {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
@@ -260,5 +276,54 @@ public class HomeFragment extends Fragment {
         };
         VolleySingleton.getInstance(getActivity()).addToRequestQueue(stringRequest);
         CallProductList();
+    }
+
+    private void Top_offer(){
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URLs.URL_offers,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject obj = new JSONObject(response);
+                            if(obj.getBoolean("status")) {
+                                JSONArray userJson = obj.getJSONArray("offers");
+                                for (int i = 0; i < userJson.length(); i++) {
+                                    JSONObject itemslist = userJson.getJSONObject(i);
+                                    String id = itemslist.getString("id");
+                                    String name = itemslist.getString("title");
+                                    String photo = itemslist.getString("path");
+
+                                    Top_offers top_offer = new Top_offers(id, name, photo);
+                                    top_offers.add(top_offer);
+                                }
+                            }else {
+                                Toast.makeText(getActivity(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            adapter = new Top_offer_adapter(getActivity(),top_offers);
+                            recyclerView.setAdapter(adapter);
+                            adapter.notifyDataSetChanged();
+                        }catch (NullPointerException e){
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                    }
+                })
+            {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("token",token);
+                return params;
+            }
+        };
+        VolleySingleton.getInstance(getActivity()).addToRequestQueue(stringRequest);
     }
 }

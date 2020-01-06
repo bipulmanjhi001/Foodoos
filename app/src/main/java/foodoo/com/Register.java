@@ -60,6 +60,7 @@ public class Register extends AppCompatActivity {
         coordinatorlayout=(NestedScrollView)findViewById(R.id.registercoordinatorlayout);
         cd = new ConnectionDetector(getApplicationContext());
         isInternetPresent = cd.isConnectingToInternet();
+
         registerfirstname=(EditText)findViewById(R.id.registerfirstname);
         registeraddress=(EditText)findViewById(R.id.registeraddress);
         registerphoneno=(EditText)findViewById(R.id.registerphoneno);

@@ -1162,12 +1162,15 @@ drawable design_snackbar_background
 drawable fb
 drawable fb_img
 drawable foodoo
+drawable foodoo2
 drawable gradientbackground
 drawable ic_arrow_back_black_24dp
 drawable ic_background
 drawable ic_bottom_background
 drawable ic_group_3
+drawable ic_home
 drawable ic_home_black_24dp
+drawable ic_icon
 drawable ic_launcher
 drawable ic_launcher_background
 drawable ic_launcher_background2
@@ -1182,7 +1185,11 @@ drawable ic_menu_slideshow
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_notification
+drawable ic_qr_code
+drawable ic_retails
 drawable ic_search_black_24dp
+drawable ic_shop
 drawable ic_top_background
 drawable menus
 drawable messenger_bubble_large_blue
@@ -1534,8 +1541,12 @@ id title_template
 id toolbar
 id top
 id topPanel
+id top_id
 id top_imagelist_pro
+id top_offers_re
+id top_path
 id top_progressBar_pro
+id top_title
 id touch_outside
 id transition_current_scene
 id transition_layout_save
@@ -1627,6 +1638,7 @@ layout category_product_list2
 layout com_facebook_activity_layout
 layout com_facebook_login_fragment
 layout com_facebook_tooltip_bubble
+layout contain_home
 layout content_dashboard
 layout content_patner
 layout custom_dialog
@@ -1684,6 +1696,8 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout top_layout
+layout top_list_row
+layout top_offer
 menu activity_dashboard_drawer
 menu dashboard
 mipmap ic_launcher
